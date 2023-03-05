@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="info">
+    <ul></a>
+      <li>Use the arrow keys or WASD keys to move the frog in the corresponding direction: up, down, left, or right.</li>
+      <li>Guide the frog across the busy road and the river by hopping onto moving logs and lily pads.</li>
+      <li>Avoid cars, trucks, and other obstacles that can kill the frog.</li>
+      <li>Reach the other side of the river and land on the safe green platform to complete each level.</li>
+      <li>Watch out for the timer, as you only have a limited amount of time to reach the end of each level."</li>
+    </ul>
+    <button class="x">X</button>
+  </div>
+  <div class="how">HOW TO PLAY</div>
+
+  <div class="wrapper"></div>
+  <div id="gameOver">
+    <h1>GAME OVER</h1>
+  </div>
+  <div id="back">BACK</div>
+  <div id="title">
+    <h1>FROGGER GAME</h1>
+    <p>Frogger is a classic arcade game released by Konami in 1981. The game involves guiding a frog across a busy road and river to reach its home on the other side. It became a massive success and has since become a beloved classic, inspiring numerous imitators and spin-offs, and has been referenced and parodied in popular culture..
+      <br>
+      <br>
+      Frogger's simple yet addictive gameplay, charming graphics, and catchy soundtrack made it an instant hit. It quickly became one of the most popular arcade games of the 1980s and has since been ported to numerous home consoles and computers.
+    </p>
+  </div>
+  <div class="container">
+      <div class="h3">
+        <h3>Seconds left: <span id="time-left">20</span></h3>
+        <h3>Result: <span id="result"></span></h3>
+      </div>
+      <div class="buttons">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="restart">Restart</button>
+      </div>
+      <div class="grid">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div class="ending-block"></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div class="log-left l1"></div>
+          <div class="log-left l2"></div>
+          <div class="log-left l3"></div>
+          <div class="log-left l4"></div>
+          <div class="log-left l5"></div>
+          <div class="log-left l1"></div>
+          <div class="log-left l2"></div>
+          <div class="log-left l3"></div>
+          <div class="log-left l4"></div>
+          <div class="log-right l5"></div>
+          <div class="log-right l1"></div>
+          <div class="log-right l2"></div>
+          <div class="log-right l3"></div>
+          <div class="log-right l4"></div>
+          <div class="log-right l5"></div>
+          <div class="log-right l1"></div>
+          <div class="log-right l2"></div>
+          <div class="log-right l3"></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div class="car-left c1"></div>
+          <div class="car-left c2"></div>
+          <div class="car-left c3"></div>
+          <div class="car-left c1"></div>
+          <div class="car-left c2"></div>
+          <div class="car-left c3"></div>
+          <div class="car-left c1"></div>
+          <div class="car-left c2"></div>
+          <div class="car-left c3"></div>
+          <div class="car-right c1"></div>
+          <div class="car-right c2"></div>
+          <div class="car-right c3"></div>
+          <div class="car-right c1"></div>
+          <div class="car-right c2"></div>
+          <div class="car-right c3"></div>
+          <div class="car-right c1"></div>
+          <div class="car-right c2"></div>
+          <div class="car-right c3"></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div class="starting-block"></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+</div>
+    <audio  id="play" controls  loop src="Frogger.mp3" style="display: none;">
+    <audio  id="death" controls   src="DEATH.mp3" style="display: none;">
+    <audio  id="jump" controls   src="JUM.mp3" style="display: none;">
+    <audio  id="winner" controls src="WINNER.mp3" style="display: none;">
+
+  <script src="./script/script.js"></script>
+</body>
+</html>
